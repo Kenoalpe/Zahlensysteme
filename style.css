@@ -1,0 +1,90 @@
+html, body{
+	height: 100%;
+}
+
+html {
+	display: table;
+	margin: auto;
+
+}
+
+body{
+	background-color: #18191A;
+	color: #E4E6EB;
+	font-family: arial;
+	display: table-cell;
+	vertical-align: middle;
+
+}
+
+.main{
+	display: grid;
+
+	grid-template-columns: 1fr 4fr; 
+	grid-template-rows: 1fr 1fr 1fr;
+
+	grid-column-gap: 10px;
+	grid-row-gap: 30px;
+
+	background-color: #242526;
+
+	padding: 75px;
+
+	border: 6px solid #e85d23;
+	border-radius: 3px;
+
+}
+
+.all{	
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 3px;
+	background-color: 	#faf0e6;
+
+}
+
+.o {
+	height: 50px;
+}
+
+.i {
+	outline: none;
+}
+
+.i.a{
+	padding-left: 5px;
+}
+
+.i.b{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: black;
+	padding-left: 5px;
+}
+
+.i.c{
+	grid-column: 1/3;
+	grid-row: 2/3;
+
+	background:
+	linear-gradient(90deg, #e85d23, #e85d23) center bottom/0% 5px no-repeat,
+	linear-gradient(90deg, white, white) center bottom/0% no-repeat,
+	linear-gradient(90deg, #faf0e6, #faf0e6) center bottom/100% no-repeat;
+
+	transition: background-size 0.1s ease;
+
+}
+
+.i.c:hover{
+
+	background-size: 100% 5px, 100%, 100%;
+	
+	background-color: white;
+
+}
+
+.i.c:active{
+	font-size: 17px;
+}
